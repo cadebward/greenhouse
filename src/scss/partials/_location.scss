@@ -1,0 +1,63 @@
+#location {
+ background-color: #8EBD62;
+ padding: 55px 0;
+}
+
+.favorite-nursery {
+  width: 270px;
+  margin: 0 auto;
+  .cache {
+    color: white;
+    font-size: 200%;
+    text-transform: uppercase;
+  }
+  .fav {
+    color: white;
+    font-size: 300%;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+}
+
+.info {
+  width: 270px;
+  margin: 0 auto;
+
+  h4 {
+    color: white;
+    font-size: 150%;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+
+  img {
+    float: left;
+    padding-right: 15px;
+  }
+
+  p {
+    color: white;
+    font-weight: lighter;
+    line-height: 10px;
+    font-size: 120%;
+  }
+}
+
+@media (min-width: 50rem) {
+  .right {
+    float: right;
+  }
+  .info { width: 221px; }
+  .favorite-nursery {
+    width: 500px;
+    padding-top: 20px;
+    .cache {
+      font-size: 300%;
+    }
+    .fav {
+      font-size: 473%;
+      line-height: 65px;
+      font-weight: 400;
+    }
+  }
+}

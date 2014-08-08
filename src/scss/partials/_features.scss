@@ -1,0 +1,39 @@
+#features {
+  padding: 25px 0;
+  background-color: #448F01;
+}
+
+.feature {
+  background-color: #459300;
+  padding: 10px 20px;
+  margin-top: 20px;
+
+  h3 {
+    font-size: 205%;
+    color: white;
+    margin: 0;
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 125%;
+  }
+
+  p {
+    color: white;
+    font-size: 110%;
+  }
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 50rem) {
+  .feature {
+    padding: 20px 30px;
+  }
+}

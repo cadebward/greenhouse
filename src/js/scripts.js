@@ -2,8 +2,6 @@
 
   'use strict';
 
-  $(function () {
-    // FireShell
-  });
+  // console.log($('.container'));
 
 })(jQuery, window, document);
