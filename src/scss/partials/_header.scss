@@ -18,7 +18,7 @@
 
 nav {
   margin: 25px auto;
-  width: 244px;
+  width: 230px;
   ul {
     padding-left: calc(50% - 110px);
     padding-bottom: 25px;
@@ -26,6 +26,9 @@ nav {
     li {
       float: left;
       padding-right: 15px;
+      &:last-child {
+        padding-right: 0;
+      }
     }
   }
 }
