@@ -6,6 +6,8 @@
 
   ul {
     list-style-type: none;
+    padding: 0;
+    // margin: 0 auto;
   }
 
   img {
@@ -15,6 +17,8 @@
 }
 
 nav {
+  margin: 25px auto;
+  width: 243px;
   ul {
     padding-left: calc(50% - 110px);
     padding-bottom: 25px;
@@ -27,6 +31,7 @@ nav {
 }
 
 #subnav {
+  margin-top: 60px;
   text-align: center;
 
   a {
@@ -38,6 +43,7 @@ nav {
 
   ul {
     padding: 0;
+    margin: 0;
   }
 }
 
@@ -47,7 +53,7 @@ nav {
   }
   #subnav {
     position: absolute;
-    margin-left: 786px;
+    margin-left: calc(100% - 240px);
     margin-top: -67px;
 
     ul {
@@ -75,5 +81,11 @@ nav {
     li {
       font-size: 140%;
     }
+  }
+}
+
+@media (min-width: 62rem) {
+  #subnav {
+    margin-left: 786px;
   }
 }
