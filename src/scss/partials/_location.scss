@@ -23,11 +23,15 @@
   width: 270px;
   margin: 0 auto;
 
-  h4 {
+  .pin {
     color: white;
     font-size: 150%;
     text-transform: uppercase;
     font-weight: lighter;
+  }
+
+  .hours {
+    margin-top: 35px;
   }
 
   img {
