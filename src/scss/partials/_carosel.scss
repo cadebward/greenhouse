@@ -1,5 +1,11 @@
 section#carosel {
   background: #8EBD62 url(../img/cropped.jpg) no-repeat;
   background-size: cover;
-  height: 375px;
+  height: 200px;
+}
+
+@media (min-width: 585px) {
+  section#carosel {
+    height: 375px;
+  }
 }
