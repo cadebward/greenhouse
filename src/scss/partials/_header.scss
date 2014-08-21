@@ -16,9 +16,20 @@
   }
 }
 
+.desktop-tel {
+  display: none;
+}
+
+.tablet-tel {
+  display: none;
+}
+
 nav {
   margin: 25px auto;
-  width: 230px;
+  // width: 230px;
+  width: 100%;
+  // added this
+  font-size: 20px;
   ul {
     padding-left: calc(50% - 110px);
     padding-bottom: 25px;
@@ -31,22 +42,65 @@ nav {
       }
     }
   }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 #subnav {
   margin-top: 60px;
   text-align: center;
-
+  
+  // changed .tel and a all around...
   a {
-    margin-right: 10px;
-    color: #008C23;
-    font-weight: bold;
+    color: white;
     text-decoration: none;
   }
+
+  .tel {
+    color: #008C23;
+  }
+
 
   ul {
     padding: 0;
     margin: 0;
+
+    li {
+      // added this
+      float: left;
+      // and this
+      margin-left: 20px;
+      
+      // and all of this
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 585px) {
+  .mobile-tel {
+    display: none;
+  }
+  .tablet-tel {
+    display: block;
+    color: #008C23;
+    text-decoration: none;
+    margin-left: 370px;
+    margin-bottom: -20px;
+    margin-top: 10px;
+  }
+  nav {
+    margin-left: 165px;
+    margin-top: -70px;
+    font-size: 25px;
+  }
+  #subnav {
+    margin-left: 165px;
+    padding-top: 10px;
   }
 }
 
@@ -54,10 +108,16 @@ nav {
   .header {
     padding: 35px 0;
   }
+  .desktop-tel {
+    display: block;
+  }
+  .tablet-tel {
+    display: none;
+  }
   #subnav {
     position: absolute;
     margin-left: calc(100% - 240px);
-    margin-top: -67px;
+    margin-top: -55px;
 
     ul {
       margin: 0;
@@ -73,16 +133,16 @@ nav {
   }
   nav {
     position: absolute;
-    margin-top: -63px;
+    margin-top: -62px;
     margin-left: 161px;
-    width: 320px;
+    width: inherit;
 
     ul {
       padding: 0;
     }
 
     li {
-      font-size: 140%;
+      font-size: 130%;
     }
   }
 }
